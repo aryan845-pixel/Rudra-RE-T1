@@ -23,7 +23,7 @@ def process_frame(frame, size=(W, H)):
     return cv2.resize(frame, size, interpolation=cv2.INTER_AREA)
 
 
-def run(source, output_path, log_dir, show=True, buffer_size=20, max_frames=None):
+def run(source, output_path, log_dir, show=True, buffer_size=120, max_frames=None):
     cap = cv2.VideoCapture(source)
     if not cap.isOpened():
         raise RuntimeError(f"Could not open video source: {source}")
@@ -130,7 +130,7 @@ def main():
     ap.add_argument("--output", default=os.path.join(ROOT, "output", "processed_video.mp4"))
     ap.add_argument("--logs", default=os.path.join(ROOT, "output"))
     ap.add_argument("--no-display", action="store_true", help="run headless (no window)")
-    ap.add_argument("--buffer", type=int, default=20)
+    ap.add_argument("--buffer", type=int, default=200)
     a = ap.parse_args()
 
     source = int(a.source) if str(a.source).isdigit() else a.source

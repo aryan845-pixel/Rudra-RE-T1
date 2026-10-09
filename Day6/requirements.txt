@@ -1,0 +1,8 @@
+# Python 3.9+ (developed against 3.13). CPU-only is fine.
+# For a CPU-only torch build (smaller): pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0
+torchvision>=0.15
+Pillow>=10.0
+numpy>=1.24
+# Optional: tests are plain unittest and also run under pytest
+pytest>=7.0

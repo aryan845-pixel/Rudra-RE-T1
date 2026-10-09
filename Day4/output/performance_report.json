@@ -1,12 +1,12 @@
 {
   "total_frames": 446,
-  "elapsed_seconds": 4.599,
-  "average_fps": 96.97,
-  "avg_latency_ms": 2.257,
-  "min_latency_ms": 1.584,
-  "max_latency_ms": 6.157,
-  "buffer_max_size": 20,
-  "buffer_final_size": 20,
-  "buffer_drops": 426,
+  "elapsed_seconds": 13.34,
+  "average_fps": 33.43,
+  "avg_latency_ms": 5.516,
+  "min_latency_ms": 2.263,
+  "max_latency_ms": 13.579,
+  "buffer_max_size": 200,
+  "buffer_final_size": 200,
+  "buffer_drops": 246,
   "output_video": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day4\\output\\processed_video.mp4"
 }
