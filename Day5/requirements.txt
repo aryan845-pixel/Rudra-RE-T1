@@ -1,0 +1,6 @@
+# Day09 Object Detection Pipeline
+# Ranges used because exact versions were not testable offline. After your first successful run:
+#   pip freeze > requirements-lock.txt   (and paste key versions into README)
+ultralytics>=8.3,<9      # pulls in torch + torchvision (CPU is fine)
+opencv-python>=4.8
+numpy>=1.24

@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-10-09T22:53:05",
+  "input_path": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day5\\images\\test.jpg",
+  "model": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day5\\yolov8n.onnx",
+  "device": "cpu",
+  "confidence_threshold": 0.25,
+  "inference_time_ms": 236.23,
+  "num_detections": 5,
+  "class_labels": [
+    "person",
+    "person",
+    "person",
+    "bus",
+    "person"
+  ],
+  "confidence_scores": [
+    0.8902,
+    0.8833,
+    0.8784,
+    0.8434,
+    0.4363
+  ],
+  "detections": [
+    {
+      "class_id": 0,
+      "label": "person",
+      "confidence": 0.8902077078819275,
+      "x1": 670.4491577148438,
+      "y1": 380.55792236328125,
+      "x2": 809.9188232421875,
+      "y2": 879.6510620117188
+    },
+    {
+      "class_id": 0,
+      "label": "person",
+      "confidence": 0.8832786083221436,
+      "x1": 221.67640686035156,
+      "y1": 407.41986083984375,
+      "x2": 343.78369140625,
+      "y2": 856.1856689453125
+    },
+    {
+      "class_id": 0,
+      "label": "person",
+      "confidence": 0.8784425258636475,
+      "x1": 50.68153381347656,
+      "y1": 397.2986145019531,
+      "x2": 244.3976593017578,
+      "y2": 905.3758544921875
+    },
+    {
+      "class_id": 5,
+      "label": "bus",
+      "confidence": 0.8433699607849121,
+      "x1": 31.488807678222656,
+      "y1": 230.7434539794922,
+      "x2": 801.4140625,
+      "y2": 775.7791748046875
+    },
+    {
+      "class_id": 0,
+      "label": "person",
+      "confidence": 0.4363081753253937,
+      "x1": 0.44961977005004883,
+      "y1": 549.838134765625,
+      "x2": 57.76948928833008,
+      "y2": 868.3001098632812
+    }
+  ],
+  "output_image": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day5\\outputs\\detected.jpg",
+  "versions": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "opencv-python": "5.0.0.93",
+    "numpy": "2.3.5",
+    "backend": "OpenCV DNN (ONNX)"
+  }
+}

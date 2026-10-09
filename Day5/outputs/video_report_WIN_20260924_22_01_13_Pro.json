@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-10-09T23:04:05",
+  "input_video": "C:\\Users\\L-14 Lenovo\\Pictures\\Camera Roll\\WIN_20260924_22_01_13_Pro.mp4",
+  "model": "< cv2.dnn.Net 000001D367B96590>",
+  "device": "cpu",
+  "confidence_threshold": 0.25,
+  "video_info": {
+    "width": 1280,
+    "height": 720,
+    "fps": 10.01585469375289,
+    "total_frames": 446
+  },
+  "frames_processed": 446,
+  "total_detections": 884,
+  "unique_classes": [
+    "book",
+    "laptop",
+    "person",
+    "refrigerator",
+    "remote",
+    "umbrella"
+  ],
+  "avg_inference_ms": 569.85,
+  "avg_fps": 1.75,
+  "output_video": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day5\\outputs\\detected_WIN_20260924_22_01_13_Pro.mp4",
+  "versions": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "opencv-python": "5.0.0.93",
+    "numpy": "2.3.5",
+    "backend": "OpenCV DNN (ONNX)"
+  }
+}
