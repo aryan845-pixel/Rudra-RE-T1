@@ -1,5 +1,7 @@
 outputs/*
 !outputs/.gitkeep
+!outputs/*.png
 __pycache__/
 .venv/
 *.pyc
+
