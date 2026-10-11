@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-10-10T16:22:40.408930+00:00",
+  "config": {
+    "warmup": 5,
+    "runs": 30,
+    "batch_size": 1,
+    "backend": "torchscript",
+    "input_size": 512,
+    "input_type": "image",
+    "input_file": "synthetic_test.png",
+    "input_image": "synthetic_test.png",
+    "model": "segmentation_model.pt",
+    "device": "cpu",
+    "input_dims": "640x480->512x512"
+  },
+  "timing_scope": {
+    "model_only": "forward pass only: preprocessed tensor -> raw model output",
+    "end_to_end": "resize+normalize -> forward pass -> argmax mask (image already decoded in memory)"
+  },
+  "model_load_time_ms": 1786.638400000811,
+  "model_only": {
+    "count": 30,
+    "mean_ms": 1837.317703332883,
+    "median_ms": 1750.3815999971266,
+    "min_ms": 899.2462000023806,
+    "max_ms": 3050.339099998382,
+    "p95_ms": 2465.8141650003017,
+    "throughput_img_per_s": 0.5442716837626972
+  },
+  "end_to_end": {
+    "count": 30,
+    "mean_ms": 1704.8281933331357,
+    "median_ms": 1503.239850000682,
+    "min_ms": 1403.9707000010822,
+    "max_ms": 3002.074399999401,
+    "p95_ms": 2405.8483399980105,
+    "throughput_img_per_s": 0.586569370397896
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "cpu_count": 8,
+    "numpy": "2.3.5",
+    "cv2": "4.10.0",
+    "onnxruntime": "1.30.0",
+    "torch": "2.14.0+cpu"
+  },
+  "limitations": [
+    "Batch size 1 only.",
+    "Decode time excluded from end-to-end scope.",
+    "Single process; background load on the machine affects results."
+  ]
+}

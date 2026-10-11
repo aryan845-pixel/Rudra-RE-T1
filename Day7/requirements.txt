@@ -1,0 +1,4 @@
+numpy
+opencv-python
+onnxruntime      # for .onnx models
+# torch          # only if your model is TorchScript (.pt/.pth)
