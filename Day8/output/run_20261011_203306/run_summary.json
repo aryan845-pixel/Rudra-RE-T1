@@ -1,0 +1,21 @@
+{
+  "source": "video:C:\\Users\\L-14 Lenovo\\Pictures\\Camera Roll\\WIN_20260924_22_01_13_Pro.mp4",
+  "config": {
+    "threshold": 25,
+    "min_area": 500,
+    "blur": 5,
+    "save_video": true,
+    "gui": true,
+    "max_frames": 0
+  },
+  "started": "2026-10-11T20:33:06",
+  "frames_read": 259,
+  "pairs_compared": 258,
+  "motion_frames": 258,
+  "status": "stopped by user (q)",
+  "video_saved": true,
+  "elapsed_seconds": 15.358,
+  "representative_changed_pixels": 202329,
+  "output_dir": "output\\run_20261011_203306",
+  "finished": "2026-10-11T20:33:22"
+}

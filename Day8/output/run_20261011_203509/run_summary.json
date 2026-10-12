@@ -1,0 +1,21 @@
+{
+  "source": "video:samples\\moving.mp4",
+  "config": {
+    "threshold": 25,
+    "min_area": 500,
+    "blur": 5,
+    "save_video": true,
+    "gui": true,
+    "max_frames": 0
+  },
+  "started": "2026-10-11T20:35:09",
+  "frames_read": 60,
+  "pairs_compared": 59,
+  "motion_frames": 45,
+  "status": "completed",
+  "video_saved": true,
+  "elapsed_seconds": 1.041,
+  "representative_changed_pixels": 4141,
+  "output_dir": "output\\run_20261011_203509",
+  "finished": "2026-10-11T20:35:10"
+}
