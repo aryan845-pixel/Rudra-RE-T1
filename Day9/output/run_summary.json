@@ -1,0 +1,54 @@
+{
+  "task": "Day 13 - Visual Change Detection",
+  "timestamp": "2026-10-13T06:14:55",
+  "reference_image": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day9\\input\\reference.png",
+  "changed_image": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day9\\input\\changed.png",
+  "statistics": {
+    "image_width": 640,
+    "image_height": 480,
+    "total_pixels": 307200,
+    "changed_pixels": 11909,
+    "changed_area_percent": 3.8766,
+    "threshold": 30,
+    "blur_kernel": 5,
+    "morph_kernel": 3,
+    "min_area": 50,
+    "grayscale": true,
+    "change_regions": 3,
+    "changed_image_resized": false,
+    "max_difference": 122,
+    "mean_difference": 1.9554
+  },
+  "regions": [
+    {
+      "x": 541,
+      "y": 250,
+      "w": 59,
+      "h": 51,
+      "area": 1536
+    },
+    {
+      "x": 300,
+      "y": 303,
+      "w": 101,
+      "h": 77,
+      "area": 6396
+    },
+    {
+      "x": 66,
+      "y": 346,
+      "w": 70,
+      "h": 69,
+      "area": 3628
+    }
+  ],
+  "outputs": {
+    "reference_preview": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day9\\output\\reference_preview.png",
+    "changed_preview": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day9\\output\\changed_preview.png",
+    "difference": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day9\\output\\difference.png",
+    "delta_heatmap": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day9\\output\\delta_heatmap.png",
+    "change_mask": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day9\\output\\change_mask.png",
+    "change_map": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day9\\output\\change_map.png",
+    "run_summary": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day9\\output\\run_summary.json"
+  }
+}
