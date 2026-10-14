@@ -1,0 +1,39 @@
+{
+  "original": {
+    "mean_intensity": 119.19209289550781,
+    "std_intensity": 54.68730479074234,
+    "min": 0,
+    "max": 255,
+    "entropy_bits": 5.707423297443866,
+    "laplacian_variance": 22921.966127849184
+  },
+  "denoised": {
+    "mean_intensity": 117.17396545410156,
+    "std_intensity": 43.95361581622818,
+    "min": 30,
+    "max": 255,
+    "entropy_bits": 5.67858913243732,
+    "laplacian_variance": 328.37272644019686
+  },
+  "enhanced": {
+    "mean_intensity": 133.16329956054688,
+    "std_intensity": 63.92480442559978,
+    "min": 0,
+    "max": 255,
+    "entropy_bits": 5.66435431642312,
+    "laplacian_variance": 638.7624359128531
+  },
+  "notes": [
+    "Higher contrast/entropy does not automatically mean better quality.",
+    "laplacian_variance rises with both sharpness AND noise; interpret with care."
+  ],
+  "reference_comparison": {
+    "psnr_original_vs_reference_db": 17.50104907245909,
+    "psnr_denoised_vs_reference_db": 24.03183407145988,
+    "psnr_enhanced_vs_reference_db": 18.568285925961064,
+    "ssim_original_vs_reference": 0.2682785798395842,
+    "ssim_denoised_vs_reference": 0.8972274275893334,
+    "ssim_enhanced_vs_reference": 0.7570013305692814,
+    "note": "PSNR/SSIM are meaningful only when the reference is the intended clean image."
+  }
+}

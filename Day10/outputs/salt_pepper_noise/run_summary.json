@@ -1,0 +1,25 @@
+{
+  "input_path": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\samples\\salt_pepper_noise.png",
+  "reference_path": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\samples\\clean_reference.png",
+  "image_height": 256,
+  "image_width": 256,
+  "channels": 3,
+  "denoise_method": "median",
+  "denoise_params": {
+    "ksize": 5
+  },
+  "enhance_mode": "stretch",
+  "enhance_params": {
+    "low_percentile": 1.0,
+    "high_percentile": 99.0
+  },
+  "output_paths": {
+    "original.png": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\salt_pepper_noise\\original.png",
+    "denoised.png": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\salt_pepper_noise\\denoised.png",
+    "enhanced.png": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\salt_pepper_noise\\enhanced.png",
+    "comparison.png": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\salt_pepper_noise\\comparison.png",
+    "run_summary.json": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\salt_pepper_noise\\run_summary.json",
+    "quality_metrics.json": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\salt_pepper_noise\\quality_metrics.json"
+  },
+  "processing_time_seconds": 0.178
+}

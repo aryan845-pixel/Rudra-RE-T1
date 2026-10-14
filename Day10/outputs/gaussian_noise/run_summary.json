@@ -1,0 +1,27 @@
+{
+  "input_path": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\samples\\gaussian_noise.png",
+  "reference_path": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\samples\\clean_reference.png",
+  "image_height": 256,
+  "image_width": 256,
+  "channels": 3,
+  "denoise_method": "bilateral",
+  "denoise_params": {
+    "d": 9,
+    "sigma_color": 50.0,
+    "sigma_space": 50.0
+  },
+  "enhance_mode": "stretch",
+  "enhance_params": {
+    "low_percentile": 1.0,
+    "high_percentile": 99.0
+  },
+  "output_paths": {
+    "original.png": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\gaussian_noise\\original.png",
+    "denoised.png": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\gaussian_noise\\denoised.png",
+    "enhanced.png": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\gaussian_noise\\enhanced.png",
+    "comparison.png": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\gaussian_noise\\comparison.png",
+    "run_summary.json": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\gaussian_noise\\run_summary.json",
+    "quality_metrics.json": "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day10\\outputs\\gaussian_noise\\quality_metrics.json"
+  },
+  "processing_time_seconds": 0.5927
+}

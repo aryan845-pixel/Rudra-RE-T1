@@ -1,0 +1,4 @@
+opencv-python
+numpy
+scikit-image   # optional: only needed for SSIM (SSIM is skipped/null if missing)
+pytest         # optional: tests also run with plain unittest
