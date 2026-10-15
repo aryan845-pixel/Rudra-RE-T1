@@ -1,0 +1,35 @@
+{
+  "note": "Reference-based: each result is compared with the cropped original at identical dimensions. PSNR in dB (higher = closer); SSIM 0..1. Larger output size alone says nothing about quality. Synthetic/downscaled-reference results do not predict performance on real low-res photos.",
+  "scale": 4,
+  "psnr_infinite_is_null": true,
+  "methods": {
+    "bilinear": {
+      "output_size_wh": [
+        920,
+        656
+      ],
+      "psnr_db": 22.9206,
+      "ssim": 0.85709,
+      "file_bytes": 247340
+    },
+    "bicubic": {
+      "output_size_wh": [
+        920,
+        656
+      ],
+      "psnr_db": 23.5122,
+      "ssim": 0.868126,
+      "file_bytes": 276152
+    },
+    "lanczos": {
+      "output_size_wh": [
+        920,
+        656
+      ],
+      "psnr_db": 23.5345,
+      "ssim": 0.8518,
+      "file_bytes": 317224
+    }
+  },
+  "ai_available": false
+}

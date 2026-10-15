@@ -1,0 +1,98 @@
+{
+  "task": "Day 11 - Super-Resolution Study",
+  "date": "2026-10-15T10:52:00+05:30",
+  "environment": {
+    "python": "3.11.9",
+    "opencv": "4.10.0",
+    "numpy": "2.3.5",
+    "platform": "Windows-10-10.0.26300-SP0"
+  },
+  "input": {
+    "source": "file",
+    "path": "C:\\Users\\L-14 Lenovo\\Pictures\\Screenshots\\Screenshot 2026-09-24 160130.png",
+    "sha256_before": "1c24974492be5036403c9bd65633579dad04588034306ff4c5e3af42505a04fa",
+    "sha256_after": "1c24974492be5036403c9bd65633579dad04588034306ff4c5e3af42505a04fa",
+    "unchanged": true,
+    "decoded_shape": [
+      657,
+      922,
+      4
+    ],
+    "decoded_dtype": "uint8",
+    "was_grayscale": false,
+    "alpha_dropped": true
+  },
+  "scale": 4,
+  "reference_size_wh": [
+    920,
+    656
+  ],
+  "low_res_size_wh": [
+    230,
+    164
+  ],
+  "low_res_generation": "reference cropped to a multiple of scale, then cv2.resize(..., INTER_AREA)",
+  "timing_note": "interpolation time = median of 5 runs after 1 warm-up; AI time = single run",
+  "methods": {
+    "bilinear": {
+      "output_size": [
+        920,
+        656
+      ],
+      "file": "bilinear_x4.png",
+      "time_ms_median": 0.8537,
+      "time_ms_min": 0.7343,
+      "repeats": 5
+    },
+    "bicubic": {
+      "output_size": [
+        920,
+        656
+      ],
+      "file": "bicubic_x4.png",
+      "time_ms_median": 1.5014,
+      "time_ms_min": 1.4852,
+      "repeats": 5
+    },
+    "lanczos": {
+      "output_size": [
+        920,
+        656
+      ],
+      "file": "lanczos_x4.png",
+      "time_ms_median": 3.6601,
+      "time_ms_min": 3.6047,
+      "repeats": 5
+    }
+  },
+  "ai": {
+    "available": false,
+    "model": null,
+    "model_file": null,
+    "scale": 4,
+    "inference_time_ms": null,
+    "reason_unavailable": "No compatible model file (EDSR/LapSRN/FSRCNN/ESPCN _x4.pb) found in: C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day11\\models",
+    "model_search_dirs": [
+      "C:\\Users\\L-14 Lenovo\\Desktop\\rudra edge\\Day11\\models"
+    ]
+  },
+  "gui": {
+    "status": "opened",
+    "detail": "closed with window close button [DISPLAY=native desktop]"
+  },
+  "output_dir": "outputs\\day11",
+  "files": [
+    "bicubic_x2.png",
+    "bicubic_x4.png",
+    "bilinear_x2.png",
+    "bilinear_x4.png",
+    "comparison.png",
+    "lanczos_x2.png",
+    "lanczos_x4.png",
+    "low_resolution.png",
+    "original.png",
+    "quality_metrics.json",
+    "run_summary.json",
+    "sample_input.png"
+  ]
+}
