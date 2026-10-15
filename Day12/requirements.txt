@@ -1,0 +1,37 @@
+# ==============================================================================
+# Rudra Edge Aerospace | RE-T1 (Spectra) Computer Vision Engineering
+# Master Consolidated Requirements Manifest (Days 1–12)
+# ==============================================================================
+# Notes:
+# - Python Compatibility: Python 3.10 - 3.12 (Tested on 3.11.9 / 3.13)
+# - Core packages are annotated with the specific Days requiring them.
+# - Version constraints are broad to support reproducibility across environments.
+# ==============================================================================
+
+# Core Numerical & Image Processing (Days 2 - 11)
+numpy>=1.24.0,<2.2.0
+opencv-python>=4.8.0,<5.1.0        # Day 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+Pillow>=9.5.0                      # Day 3 (tensor conversion), Day 6, Day 10
+
+# Deep Learning Inference Runtimes (Days 5, 6, 7)
+# Day 5: YOLOv8n ONNX model runs via OpenCV DNN (no separate onnxruntime mandatory)
+torch>=2.0.0                       # Day 6 (DeepLabV3 TorchScript), Day 7 (Benchmarking)
+torchvision>=0.15.0                # Day 6, Day 7
+
+# Image Quality Metrics & Scientific Computing (Days 9, 10, 11)
+scikit-image>=0.20.0               # Day 9 (SSIM change detection), Day 10 (PSNR/SSIM), Day 11
+scipy>=1.10.0                      # Day 10 (morphological and signal operations)
+
+# Data Analysis & Telemetry Reporting (Days 4, 7, 8)
+pandas>=2.0.0                      # Day 4 (FPS telemetry log), Day 7 (latency benchmark CSV)
+matplotlib>=3.7.0                  # Day 4 (perf graphs), Day 9 (heatmaps), Day 10 (comparisons)
+
+# Testing & Quality Assurance (Days 5, 7, 8, 9, 10, 11)
+pytest>=7.3.0                      # Automated test execution framework
+
+# ------------------------------------------------------------------------------
+# Optional / Advanced Extensions:
+# ------------------------------------------------------------------------------
+# Day 11 AI Super-Resolution Path (Optional):
+# Requires opencv-contrib-python for cv2.dnn_superres and external .pb weights
+# opencv-contrib-python>=4.8.0
